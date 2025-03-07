@@ -8,6 +8,7 @@ export const fetchSensorData = async () => {
     return response.data;
   } catch (error) {
     console.error("Error fetching sensor data:", error);
+    
     return { odorLevel: 0, soapLevel: 0, motionDetected: false };
   }
 };
